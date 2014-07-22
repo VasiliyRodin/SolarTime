@@ -16,9 +16,9 @@
     
     
     <body onload="startTime(); startDate();">
-        <h1>
+        <h4>
             Todays Date is:
-        </h1>
+        </h4>
         <div id="date"></div>
         <p>The time is:</p>
         <div id="txt"></div>        

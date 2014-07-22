@@ -9,14 +9,14 @@ function startTime(){
     var h=today.getHours();
     var m=today.getMinutes();
     var s=today.getSeconds();
-    var p;
+    var ampm;
     
     m=checkTime(m);
     s=checkTime(s);
-    h=checkHour(h,p);
+    h,ampm=checkHour(h);
     
     
-    document.getElementById('txt').innerHTML = p + h+ " : "+m+" : "+s;
+    document.getElementById('txt').innerHTML = ampm +" " + h +" : "+m+" : "+s;
     var t = setTimeout(function(){startTime();},500);
     
     
@@ -40,6 +40,7 @@ function checkHour(i,j){
     }
     return i,j;
 }
+
 
 function startDate(){
     var d = new Date();
