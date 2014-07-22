@@ -13,7 +13,9 @@ function startTime(){
     
     m=checkTime(m);
     s=checkTime(s);
-    h,ampm=checkHour(h);
+    ampm=checkAMPM(h);
+    h=checkHour(h);
+    
     
     
     document.getElementById('txt').innerHTML = ampm +" " + h +" : "+m+" : "+s;
@@ -30,15 +32,20 @@ function checkTime(i){
 }
 
 
-function checkHour(i,j){
+function checkHour(i){
     if(i>12){
         i=i-12;
-        j="PM"
     }
-    else{
-        j="AM"
+    return i;
+}
+function checkAMPM(i){
+    var j;
+    if(i>12){
+        j="PM";
     }
-    return i,j;
+    else
+        j="AM";
+    return j;
 }
 
 
