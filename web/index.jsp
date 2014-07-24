@@ -11,12 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <script lang="javascript" type="text/javascript" src="showClock.js"></script>
+        <script lang="javascript" type="text/javascript" scr="sPeakCalender.js"></script>
         <link rel="stylesheet" type="text/css" href="Box.css">
     </head>
    
     
     
-    <body onload="startTime(); startDate();">
+    <body onload="startTime(); startDate(); changeColor();">
         <h4>
             Todays Date is:
         </h4>
@@ -29,8 +30,6 @@
             Yellow = Partial Peak <br>
             Red = Off-Peak<br>
         </h3>
-        <div class="boxColor">
-             
-        </div>
+        <div class="boxColor"></div>
     </body>
 </html>
