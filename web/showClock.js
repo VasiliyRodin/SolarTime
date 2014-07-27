@@ -4,6 +4,13 @@
  * and open the template in the editor.
  */
 
+function updateInfo(){
+    startTime();
+    startDate();
+    changeColor();
+    setTimeout(updateInfo,500); //Update all every .5 seconds
+}
+
 function startTime(){
     var today=new Date();
     var h=today.getHours();
@@ -20,7 +27,7 @@ function startTime(){
     
     
     document.getElementById('txt').innerHTML = ampm +" " + h +" : "+m+" : "+s;
-    var t = setTimeout(function(){startTime();},500);
+    
     
     
 }
@@ -28,10 +35,6 @@ function startTime(){
 function startDate(){
     var d = new Date();
     document.getElementById("date").innerHTML = d.toDateString();
-}
-
-function checkColor(){
-    
 }
 
 function checkTime(i){
