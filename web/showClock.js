@@ -11,6 +11,7 @@ function startTime(){
     var s=today.getSeconds();
     var ampm;
     
+    
     m=checkTime(m);
     s=checkTime(s);
     ampm=checkAMPM(h);
@@ -21,6 +22,15 @@ function startTime(){
     document.getElementById('txt').innerHTML = ampm +" " + h +" : "+m+" : "+s;
     var t = setTimeout(function(){startTime();},500);
     
+    
+}
+
+function startDate(){
+    var d = new Date();
+    document.getElementById("date").innerHTML = d.toDateString();
+}
+
+function checkColor(){
     
 }
 
@@ -49,8 +59,5 @@ function checkAMPM(i){
 }
 
 
-function startDate(){
-    var d = new Date();
-    document.getElementById("date").innerHTML = d.toDateString();
-}
+
 
