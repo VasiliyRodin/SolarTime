@@ -17,7 +17,7 @@ function changeColor(){
 
 
 function checkMonthHour(i,j,k,l){               //i MONTH, j DAY, k DATE, l HOUR
-    if((i >= 2 && k >= 9) && (i <= 3 && k <= 5)){ // make sure in between march9 and april 5
+    if((i == 2 && k >= 9) || (i == 3 && k <= 5)){ // make sure in between march9 and april 5
         if(j!=0 || j!=6){ //make sure not weekend
             if(l >= 17 && l < 20) // hours of day
             {
@@ -32,7 +32,7 @@ function checkMonthHour(i,j,k,l){               //i MONTH, j DAY, k DATE, l HOUR
         }
     }
     
-    if((i == 3 && k >=6) && (i==3 && k <= 30)){//april 6-april 30
+    if((i == 3 && k >=6)){//april 6-april 30
         if(j!=0 || j!=6){//ADD HOLIDAYS LATER
             if(l >= 16 && l<19){//hours of day
                 document.getElementById("boxColor").style.backgroundColor = "yellow";//DISPLAY YELLOW
@@ -43,7 +43,7 @@ function checkMonthHour(i,j,k,l){               //i MONTH, j DAY, k DATE, l HOUR
         }
     
     }
-    if((i >= 4 && k >=1) && (i<=9 && k <= 25)){
+    if((i == 4 && k >=1) || (i==9 && k <= 25)){
         if(j!=0 || j!=6){
             if(l >= 1 && l>18){
                 document.getElementById("boxColor").style.backgroundColor = "green";//display green
@@ -65,7 +65,7 @@ function checkMonthHour(i,j,k,l){               //i MONTH, j DAY, k DATE, l HOUR
         }
     }
     
-    if((i == 9 && k >=26) && (i==9 && k <= 31)){
+    if((i == 9 && k >=26)){
         if(j!=0 || j!=6){
             if(l >= 13 && l>19){
                 document.getElementById("boxColor").style.backgroundColor = "green";//display green
@@ -87,7 +87,7 @@ function checkMonthHour(i,j,k,l){               //i MONTH, j DAY, k DATE, l HOUR
         }
     }
         
-    if((i >= 10 && k >= 1) && (i <= 11 && k <= 31)){
+    if((i == 10) || (i <= 11)){
         if(j!=0 || j!=6){ //make sure not weekend
             if(l >= 17 && l < 20) // hours of day
             {
