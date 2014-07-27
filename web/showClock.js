@@ -26,7 +26,7 @@ function startTime(){
     
     
     
-    document.getElementById('txt').innerHTML = ampm +" " + h +" : "+m+" : "+s;
+    document.getElementById('txt').innerHTML = h +" : "+m+" : "+s + " "+ampm;
     
     
     
@@ -54,10 +54,10 @@ function checkHour(i){
 function checkAMPM(i){
     var j;
     if(i>12){
-        j="PM";
+        j="pm";
     }
     else
-        j="AM";
+        j="am";
     return j;
 }
 
