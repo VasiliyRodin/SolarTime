@@ -49,7 +49,7 @@ function checkMonthHour(month,day,date,hour){               //month MONTH, day D
             if(hour >= 13 && hour<19){
                 color = "red";//display red
             }
-            if((hour >= 10 && hour<13) || (hour>=19 && hour<21)){
+            else if((hour >= 10 && hour<13) || (hour>=19 && hour<21)){
                 color = "yellow";//display yellow
             }
             else{
@@ -71,7 +71,7 @@ function checkMonthHour(month,day,date,hour){               //month MONTH, day D
             if(hour >= 14 && hour<20){
                 color = "red";//display red
             }
-            if((hour >= 11 && hour<14) || (hour>=20 && hour<22)){
+            else if((hour >= 11 && hour<14) || (hour>=20 && hour<22)){
                 color = "yellow";//display yellow
             }
             else{
