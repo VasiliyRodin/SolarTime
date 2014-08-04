@@ -12,7 +12,9 @@ function changeColor(){
     var date = d.getDate();
     var hour = d.getHours();
     var color = checkMonthHour(month,day,date,hour);
+    var status = getStatus(color);
     document.getElementById("boxColor").style.backgroundColor = color;
+    document.getElementById("status").innerHTML = status;
 }
 
 
@@ -104,6 +106,20 @@ function checkMonthHour(month,day,date,hour){               //month MONTH, day D
     }
     
     return color;
+}
+
+function getStatus(color){
+    var status;
+    if(color == "green"){
+        status = "Off-Peak (Ok to use electricity).";
+    }
+    else if (color == "red"){
+        status = "On-Peak (Try to conserve electricity).";
+    }
+    else{
+        status = "Partial Peak";
+    }
+    return status;
 }
 /************************ YEAR ENDS THIS IS FOR NEXT YEAR*********** 
     if((month >= 0 && date >= 1) && (month <= 2 && date <= 7)){
