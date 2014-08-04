@@ -11,12 +11,12 @@ and open the template in the editor.
 div.boxColor{
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
     text-align: center;
     font-size: 35px;
 }
 
-div.explination{
+div.status{
     text-align: center;
-    font-size: 35px;
+    font-size: 100px;
 }
