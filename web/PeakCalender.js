@@ -121,6 +121,10 @@ function getStatus(color){
     }
     return status;
 }
+
+
+
+
 /************************ YEAR ENDS THIS IS FOR NEXT YEAR*********** 
     if((month >= 0 && date >= 1) && (month <= 2 && date <= 7)){
         if(day!=0 || day!=6){ //make sure not weekend

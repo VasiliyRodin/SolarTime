@@ -6,7 +6,7 @@
 
 function updateInfo(){
     startTime();
-    startDate();
+    //startDate();
     changeColor();
     setTimeout(updateInfo,500); //Update all every .5 seconds
 }
@@ -26,16 +26,17 @@ function startTime(){
     
     
     
-    document.getElementById('txt').innerHTML = h +" : "+m+" : "+s + " "+ampm;
+    document.getElementById('txt').innerHTML = today.toDateString() + ", " + h +" : "+m+" : "+s + " "+ampm;
     
     
     
 }
-
+/*
 function startDate(){
     var d = new Date();
     document.getElementById("date").innerHTML = d.toDateString();
 }
+*/
 
 function checkTime(i){
     if(i<10){
