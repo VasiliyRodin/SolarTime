@@ -141,7 +141,7 @@ function getEndTime(month,day,date,hour){               //month MONTH, day DAY, 
     if((month >= 4 && month <9) || (month==9 && date <= 25)){
         if(day!=0 && day!=6){
             if(hour >= 13 && hour<19){
-                endTime = "9:00 pm";//display red
+                endTime = "7:00 pm";//display red
             }
             else if((hour >= 10 && hour<13) || (hour>=19 && hour<21)){
                 endTime = "1:00 pm";//display yellow
