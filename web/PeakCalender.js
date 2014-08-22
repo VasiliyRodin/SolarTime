@@ -90,7 +90,11 @@ function checkMonthHour(month,day,date,hour){
                 if(day != 5) {
                     endTime = "10:00am Tomorrow";
                 } else {
-                    endTime = "5:00pm Tomorrow";
+                    if(hour < 10) {
+                        endTime = "10:00am";
+                    } else {
+                        endTime = "5:00pm Tomorrow";
+                    }
                 }
             }
         } else {
@@ -129,7 +133,12 @@ function checkMonthHour(month,day,date,hour){
                 if(day != 5) {
                     endTime = "11:00am Tomorrow";
                 } else {
-                    endTime = "6:00pm Tomorrow";
+                    if(hour < 11)
+                    {
+                        endTime = "11:00am"
+                    } else {
+                        endTime = "6:00pm Tomorrow";
+                    }
                 }
             }
         } else {
