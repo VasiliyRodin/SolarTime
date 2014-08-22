@@ -8,6 +8,6 @@ $(document).ready(function(){
     $("span").hide();
     
     $("b").click(function(){
-        $(this).next().clideToggle(300);
+        $(this).next().slideToggle(300);
     });
 });
