@@ -88,7 +88,7 @@ function checkMonthHour(month,day,date,hour){
             } else {
                 color = "green";
                 if(day != 5) {
-                    endTime = "10:00am Tomorrow";
+                    endTime = "10:00am";
                 } else {
                     if(hour < 10) {
                         endTime = "10:00am";
@@ -131,7 +131,7 @@ function checkMonthHour(month,day,date,hour){
             } else {
                 color = "green";
                 if(day != 5) {
-                    endTime = "11:00am Tomorrow";
+                    endTime = "11:00am";
                 } else {
                     if(hour < 11)
                     {
