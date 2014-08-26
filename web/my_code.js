@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("span").hide();
     
     $("b").click(function(){
-        $(this).next().slideToggle(300);
+        var titleId= $(this).attr("id");
+        titleId.substring(1,11).slideToggle(300);
     });
 });

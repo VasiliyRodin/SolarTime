@@ -26,7 +26,7 @@ function startTime(){
     
     
     
-    document.getElementById('txt').innerHTML = today.toDateString() + ", " + h +" : "+m+" : "+s + " "+ampm;
+    document.getElementById('currentTime').innerHTML = today.toDateString() + ", " + h +" : "+m+" : "+s + " "+ampm;
     
     
     
