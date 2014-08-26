@@ -9,6 +9,7 @@ $(document).ready(function(){
     
     $("b").click(function(){
         var titleId= $(this).attr("id");
-        titleId.substring(1,11).slideToggle(300);
+        titleId.substring(1,11);
+        titleId.slideToggle(300);
     });
 });
