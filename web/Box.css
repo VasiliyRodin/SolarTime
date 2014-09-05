@@ -17,5 +17,15 @@ div.boxColor{
 
 div.status{
     text-align: center;
-    font-size: 6em;
+    font-size: 4.5em;
+}
+
+div.header{
+    text-align: center;
+    font-size: 5em;
+}
+
+footer.footer{
+    text-align: center;
+    margin-bottom: 0px;
 }
