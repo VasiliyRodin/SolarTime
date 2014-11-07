@@ -6,17 +6,22 @@
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script type="text/javascript" src="showClock.js"></script>
         <script type="text/javascript" src="PeakCalender.js"></script>
-         <script type="text/javascript" src="my_code.js"></script> 
+        <script type="text/javascript" src="my_code.js"></script> 
         <link rel="stylesheet" type="text/css" href="Box.css">
     </head>
 
 
 
     <body onload="updateInfo();">
+        <div class="header" <h1>PG&E Time-of-Use</h1></div>
+        
         <div id="status" class="status"><h4></h4></div>
         <div id="boxColor" class="boxColor">
             <b id="currentTimeTitle">The current time is:</b><br> <span id="currentTime"></span> <br>
             <b id="peakEndTitle">This period ends at:</b><br> <span id="peakEnd" class="peakEnd"></span>
         </div>
     </body>
+    <footer class="footer">
+        Created by Vasiliy Rodin
+    </footer>
 </html>
